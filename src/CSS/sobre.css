@@ -1,0 +1,67 @@
+body{
+    background-image: url('../imagens/fundo.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    margin: 0;
+    color: #ffffff;
+}
+header{
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+ul{
+    display: flex;
+    justify-content: space-between;
+    margin: auto 0;
+}
+li{
+    list-style: none;
+    margin-left: 30px;
+}
+li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+li a:hover{
+    border-bottom: solid white 1px;
+}
+main{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    width: 65%;
+    flex-direction: column;
+}
+h1{
+    font-size: 36px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 30px 0 46px;
+}
+.sessoes{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 200px;
+}
+p{
+    font-size: 35px;
+    width: 45%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    height: 10vh;
+}
+span{
+    color: #B3AFB2;
+    margin: auto;
+    font-size: 15px;
+}
