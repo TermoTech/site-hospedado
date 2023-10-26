@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+/* font-family: 'Montserrat', sans-serif; */
+
+body{
+    background-image: url(../img/fundo.png);  /* Aqui eu defino como será o fundo */
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.div-conteiner {
+    width: 90%;
+    height: 90%;
+    background-color: rgb(255, 255, 255, 0.3); /* Aqui eu crio o conteiner (Bloco central) */
+    border: 1px solid white;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.div-principal {
+    height: 100%;
+    width: 100%;
+    display: flex;      /* Aqui eu defino como ficarão alinhadas as divisorias dentro do conteine*/
+    align-items: center;
+    justify-content: center;
+}
+
+.div-lateral ul li {
+    margin-left: 2%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-top: 10%;
+    font-size: 20px; /* Aqui define os tamanhos da lista*/
+    font-family: 'Montserrat', sans-serif;
+    width: 90%;
+}
+
+
+/* Aqui acaba o painel Central */
+
+.section-principal {
+    height: 100%;
+    width: 100%;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.div-principal-central {
+    box-sizing: border-box;
+    width: 90%;
+    height: 80%;
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255, 0.3);
+    flex-direction: column;
+    margin-bottom: 5%;
+    margin-left: 5%;
+    margin-right: 3%;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.div-principal-topo {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 20%;
+    margin-top: 2%;
+}
+.page-title {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    width: 35%;
+    font-size: 54px;
+    font-weight: 500;
+}
+
+.logo{
+    margin-left: 5%;
+    margin-right: 2%;
+    width: 120px;
+    height: auto;   /*Tamanho do logo*/
+}
+
+.titulo_div_principal_central {
+    color: #000;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    text-align: center;
+    margin: 0%;
+}
+
+.topo-tabela{
+    width: 100%;
+    height: 20%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+
+.title-tabela{
+    font-size: 20px;
+    margin-right: 70%;
+    margin-left: 1%;
+    
+}
+
+.button-filtrar{
+    width: 10%;
+    height: 40%;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.button-filtrar:hover{
+    background-color: gray;
+    width: 10%;
+    height: 40%;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.icon-ampulheta{
+    width: 15px;
+}
+
+.div-tabela{
+    margin-bottom: 20px;
+    width: 90%;
+    height: 330px;
+    overflow-y: auto;
+}
+
+table{
+    width: 100%;
+}
+
+
+
+
+
+.div-principal-central {
+    width: 90%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5%;
+}
+
+.div-tabela::-webkit-scrollbar {
+    width: 8px;
+    height: 4px; /* largura da barra de rolagem */
+}
+
+.div-tabela::-webkit-scrollbar-thumb {
+    background-color: white; /* cor do polegar da barra de rolagem */
+    border-radius: 6px; /* borda arredondada do polegar */
+}
+
+.div-tabela::-webkit-scrollbar-track {
+    background-color: #1D1E2C; /* cor da trilha da barra de rolagem */
+}

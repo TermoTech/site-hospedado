@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TermoTech</title>
+  <link rel="stylesheet" href="../src/css/reset.css" />
+  <link rel="stylesheet" href="../src/css/faleConosco.css">
+  <link rel="stylesheet" href="../src/css/popupAlert.css">
+  <link rel="stylesheet" href="../src/css/layout.css" />
+  <link rel="stylesheet" href="../src/css/StyleDashboard.css">
+</head>
+
+<body>
+  <div class="div-conteiner">
+    <div class="div-principal">
+      <div class="div-lateral">
+        <h3>Bem vindo(a) Caramico</h3>
+          <ul>
+            <li>
+              <a href="p.html"><img src="../src/img/imagensPaineis/Vetor Painel.png" alt="vetorPainel" />Painel</a>
+            </li>
+            <li>
+              <a href="historico.html"><img src="../src/img/imagensPaineis/Calendar.png" alt="vetorCalendario" />Histórico</a>
+            </li>
+            <li>
+              <a href="maquinas.html"><img src="../src/img/imagensPaineis/Vetor Maquinas.png" alt="vetorMaquinas" />Máquinas</a>
+            </li>
+           
+            <!-- <li>
+              <a href="usuarios.html"><img src="../src/img/imagensPaineis/Vetor Usuarios.png"alt="vetorUsuario" />Funcionários</a>
+            </li> -->
+            <li class="sair">
+              <a href="../../Site Institucional/src/html/login.html"><img src="../src/img/imagensPaineis/log-out.png" alt="vetorLogOut" />Sair</a>
+            </li>
+          </ul>
+      </div>
+      <section class="section-principal">
+
+        <div class="div-principal-topo">
+          <img class="id-logo" src="../src/img/imagensPaineis/logo.png" alt="logo_termoTech" />
+          <span class="page-title">Painel</span>
+          <a onclick="abrirPopUp()" class="vetor-contato-a">
+            <img src="../src/img/imagensPaineis/vetor contato.png" alt="vetorContato" class="vetor-contato" id="vetor_contato" /></a>
+          <a class="vetor-Notificacao" class="vetor-notificacao-a">
+            <img src="../src/img/imagensPaineis/Notification.png" alt="vetorNotificacao" class="vetor-notificacao" id="vetor_notificacao" />
+          </a>
+        </div>
+        <div style="flex-direction: row;" class="div-principal-central">
+
+          <div class="chart" id="div_chart1">
+            <select name="maquinas" class="select_maquinas" id="selector_machine">
+              <option value="maquina1">Maquina 1</option>
+              <!-- <option value="maquina2">Maquina 2</option> -->
+              <!-- <option value="3">Maquina 3</option>
+              <option value="4">Maquina 4</option> -->
+            </select>
+            <br><br>
+            <div style="width: 100%;" id="chart_machine1">
+              <canvas id="myChart"></canvas>
+              <canvas id="myChart2" style="display: none;"></canvas>
+            </div>
+          </div>
+
+          <div style="justify-content: center; align-items: center;" class="chart" id="div_chart2">
+
+            <div class="div-maquinas-geral">
+
+              <div class="div-maquinas-geral-titulo">
+                <h1>Maquina 1</h1>
+              </div>
+
+              <div class="div-maquinas-geral-conteudo">
+
+                <div class="div-maquinas-geral-filho">
+                  <div class="div-maquinas-geral-neto">
+                    <h1>Nucleo</h1>
+                  </div>
+                  <div class="div-maquinas-geral-neto">
+                    <h1>Matriz</h1>
+                  </div>
+                  <div class="div-maquinas-geral-neto">
+                    <h1>Anel de Resfriamento</h1>
+                  </div>
+                  <!-- <div class="div-maquinas-geral-neto">
+                    <h1>Umidade do ar</h1>
+                  </div> -->
+                </div>
+
+                <div class="div-maquinas-geral-filho">
+
+                  <div class="div-maquinas-geral-neto">
+                    <progress id="progress_reator1" class="barra-progresso" value="0" max="300" min="10"></progress>
+                  </div>
+
+                  <div class="div-maquinas-geral-neto">
+                    <progress id="progress_matriz1" class="barra-progresso" value="0" max="300" min="15"></progress>
+                  </div>
+
+                  <div class="div-maquinas-geral-neto">
+                    <progress id="progress_anel1" class="barra-progresso" value="0" max="100" min="20"></progress>
+                  </div>
+
+                  <!-- <div class="div-maquinas-geral-neto">
+                    <progress id="progress_umidade1" class="barra-progresso" value="0" max="100" min="10"></progress>
+                  </div> -->
+
+                </div>
+
+                <div class="div-maquinas-geral-filho">
+                  <div class="div-maquinas-geral-neto">
+                    <span>Temperatura atual </span>
+                    <span id="temp_reator1">00</span>°C
+                  </div>
+
+                  <div class="div-maquinas-geral-neto">
+                    <span>Temperatura atual </span>
+                    <span id="temp_matriz1">00</span>°C
+                  </div>
+
+                  <div class="div-maquinas-geral-neto">
+                    <span>Temperatura atual</span>
+                    <span id="temp_anel1">00</span>°C
+                  </div>
+
+                  <!-- <div class="div-maquinas-geral-neto">
+                    <span>Umidade do ar</span>
+                    <span id="umidade_maq1">00</span>%
+                  </div> -->
+
+                </div>
+              </div>
+            </div>
+
+            <!-- <div class="div-maquinas-geral"> -->
+
+              <!-- <div class="div-maquinas-geral-titulo">
+                <h1>Maquina 2</h1>
+              </div>
+
+              <div class="div-maquinas-geral-conteudo"> -->
+<!-- 
+                <div class="div-maquinas-geral-filho">
+                  <div class="div-maquinas-geral-neto">
+                    <h1>Nucleo</h1>
+                  </div>
+                  <div class="div-maquinas-geral-neto">
+                    <h1>Matriz</h1>
+                  </div>
+                  <div class="div-maquinas-geral-neto">
+                    <h1>Anel de Resfriamento</h1>
+                  </div>
+                  <div class="div-maquinas-geral-neto">
+                    <h1>Umidade do ar</h1>
+                  </div> 
+                </div>-->
+
+                <!-- <div class="div-maquinas-geral-filho">
+
+                  <div class="div-maquinas-geral-neto">
+                    <progress id="progress_reator2" class="barra-progresso" value="0" max="300" min="10"></progress>
+                  </div>
+
+                  <div class="div-maquinas-geral-neto">
+                    <progress id="progress_matriz2" class="barra-progresso" value="0" max="300" min="15"></progress>
+                  </div>
+
+                  <div class="div-maquinas-geral-neto">
+                    <progress id="progress_anel2" class="barra-progresso" value="0" max="100" min="20"></progress>
+                  </div>
+
+                  <div class="div-maquinas-geral-neto">
+                    <progress id="progress_umidade2" class="barra-progresso" value="0" max="100" min="10"></progress>
+                  </div> 
+
+                </div> -->
+
+                <!-- <div class="div-maquinas-geral-filho">
+                  <div class="div-maquinas-geral-neto">
+                    <span>Temperatura atual </span>
+                    <span id="temp_reator2">00</span>°C
+                  </div>
+
+                  <div class="div-maquinas-geral-neto">
+                    <span>Temperatura atual </span>
+                    <span id="temp_matriz2">00</span>°C
+                  </div>
+
+                  <div class="div-maquinas-geral-neto">
+                    <span>Temperatura atual</span>
+                    <span id="temp_anel2">00</span>°C
+                  </div> -->
+
+                  <!-- <div class="div-maquinas-geral-neto">
+                    <span>Umidade do ar</span>
+                    <span id="umidade_maq2">00</span>%
+                  </div> -->
+
+                </div>
+              </div>
+            </div>
+
+      </section>
+    </div>
+    <div id="div_alerta" style="display: none;">
+      <button id="btn_close" class="btn-close-alert">FECHAR</button>
+
+    </div>
+    <div id="fale_conosco"></div>
+  </div>
+
+
+  <script src="./JS/dashboard.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <script src="../src/js/faleConosco.js"></script>
+  <script src="../src/js/graficoBasic.js"></script>
+
+  <!-- API para alertas personalizados -->
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <!-- Para usar o alerta, basta usar o comando swal
+  Exemplo de uso:
+  swal ( "Oops" ,  "A temperatura da maquina esta  muito quente" ,  "info" )
+  chama o alerta ( Informa o titulo da mensagem, o texto da mensagem, e o icone da mensagem)
+
+-->
+
+</body>
+
+</html>

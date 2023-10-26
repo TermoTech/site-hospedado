@@ -1,0 +1,157 @@
+body{
+    background-image: url(../img/imagensPaineis/Fundo.png);  /* Aqui eu defino como será o fundo */
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+.div-conteiner {
+    width: 90%;
+    height: 90%;
+    background-color: rgb(255, 255, 255, 0.3); /* Aqui eu crio o conteiner (Bloco central) */
+    border: 1px solid white;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.div-principal {
+    height: 100%;
+    width: 100%;
+    display: flex;      /* Aqui eu defino como ficarão alinhadas as divisorias dentro do conteine*/
+    align-items: center;
+    justify-content: center;
+}
+.div-lateral {
+    height: 100%;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; /* Aqui cria a lacuna lateral em cinza */
+    align-items: center;
+    background-color: grey;
+
+}
+.div-lateral h3 {
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif; /* Aqui muda o titulo*/
+    font-weight: bolder;
+    text-align: center;
+}
+.div-lateral{
+    width: 20%;
+}
+.div-lateral ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    list-style-type: none; /* Aqui tira a marcação de tópico */
+    padding: 0;
+    width: 100%;
+}
+.div-lateral ul li {
+    margin-left: 2%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-top: 10%;
+    font-size: 20px; /* Aqui define os tamanhos da lista*/
+    font-family: 'Montserrat', sans-serif;
+    width: 80%;
+}
+.div-lateral ul li img {
+    width: 20%; /*Aqui define os tamanhos da img*/
+    margin-right: 8%;
+}
+
+.div-lateral ul li a {
+    text-decoration: none; /* Aqui tira os efeitos visuais da ancora*/
+    color: black;
+    display: flex;
+    padding: 2px;
+    width: 72%;
+    align-items: center;
+}
+.div-lateral ul .sair {
+    margin-top: 50%; /*Da o espaçamento entre os vetores*/
+}
+.div-lateral ul li:hover {
+    border-radius: 5px; /*Cria o efeito ao passar o mouse em cima*/ 
+    background-color: lightgray; 
+}
+.id-logo{
+    width: 120px;
+    height: auto;   /*Tamanho do logo*/
+}
+/* Aqui acaba o painel Central */
+.section-principal {
+    height: 100%;
+    width: 100%;
+    display: flex; /*Aqui eu configuro como ficará a sessão que contera os dois graficos*/
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.div-principal-central {
+    box-sizing: border-box;
+    width: 90%;
+    height: 80%;
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255, 0.3);
+    flex-direction: column;
+    margin-bottom: 5%;
+    margin-left: 5%;
+    margin-right: 3%;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+}
+.div-principal-topo {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 20%;
+    margin-top: 2%;
+}
+.page-title {
+    margin-right: 0%; /*Configurações do titulo baseadas no Figma*/
+    font-size: 54px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    width: 35%;
+    font-size: 54px;
+}
+
+.id-logo{
+    margin-left: 5%;
+    margin-right: 2%;
+    width: 120px;
+    height: auto;   /*Tamanho do logo*/
+}
+
+.logos-topo{
+    width: 35px;
+    margin-left: 5%;
+}
+.vetor-contato-a{
+    margin-left: 20%;
+    margin-right: 5%;
+}
+.vetor-contato{
+    width: 35px;
+    cursor: pointer;
+}
+.vetor-notificacao{
+    width: 40px;
+    cursor: pointer
+}
+.vetor-notificacao-a{
+    width: 40px;
+}

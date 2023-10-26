@@ -1,0 +1,290 @@
+/* #div_principal_central {
+    box-sizing:border-box;
+    width: 90%;
+    height: 80%;
+    background-color: rgb(255, 255, 255, 0.3);
+    margin-bottom: 5%;
+    margin-left: 5%;
+    margin-right: 3%;
+    border-radius: 5px;
+    display: flex;
+    overflow: hidden;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.funcionamento-maquinas {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}
+
+.maquinas {
+    margin-top: 5%;
+    margin-left: 5%;
+    flex-direction: column;
+}
+
+.maquinas-logo-texto {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2%;
+}
+
+.maquinas-logo-texto h1 {
+    margin-left: 10%;
+    width: 150px;
+    font-size: 24px;
+} 
+
+.funcionamento-maquinas::-webkit-scrollbar {
+    width: 8px;
+    height: 4px; largura da barra de rolagem
+}
+
+.funcionamento-maquinas::-webkit-scrollbar-thumb {
+    background-color: white; cor do polegar da barra de rolagem
+    border-radius: 6px; borda arredondada do polegar
+}
+
+.funcionamento-maquinas::-webkit-scrollbar-track {
+    background-color: #1D1E2C; cor da trilha da barra de rolagem
+}
+*/
+/* Nova estilização da section das máquinas */
+
+#div_principal_central {
+    box-sizing:border-box;
+    width: 90%;
+    height: 80%;
+    background-color: rgb(255, 255, 255, 0.3);
+    margin-bottom: 5%;
+    margin-left: 5%;
+    margin-right: 3%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    font-family: 'Montserrat', sans-serif;
+    justify-content: start;
+    align-items: center;
+    padding: 2%;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+#div_principal_central::-webkit-scrollbar {
+    width: 8px;
+    height: 4px; /* largura da barra de rolagem */
+}
+
+#div_principal_central::-webkit-scrollbar-thumb {
+    background-color: white; /* cor do polegar da barra de rolagem */
+    border-radius: 6px; /* borda arredondada do polegar */
+}
+
+#div_principal_central::-webkit-scrollbar-track {
+    background-color: #1D1E2C; /* cor da trilha da barra de rolagem */
+}
+
+.funcionamento-maquinas {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.maquinas {
+    margin-top: 2%;
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+}
+.circle-stats{
+    width: 10%;
+    height: 40%;
+    border-radius: 100%;
+    background-color: green;
+}
+.funcionamento-maquinas::-webkit-scrollbar {
+    width: 8px;
+    height: 4px; /* largura da barra de rolagem */
+}
+
+.funcionamento-maquinas::-webkit-scrollbar-thumb {
+    background-color: white; /* cor do polegar da barra de rolagem */
+    border-radius: 6px; /* borda arredondada do polegar */
+}
+
+.funcionamento-maquinas::-webkit-scrollbar-track {
+    background-color: #1D1E2C; /* cor da trilha da barra de rolagem */
+}
+.card-sensor{
+    width: 50%;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.card-sensor h6{
+    width: 20%;
+    font-size: 12px;
+}
+.maq-details{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    transition: all ease-in-out 0.5s;
+    justify-content: center;
+    padding: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.539);
+    border-radius: 2px;
+    background-color: rgba(255, 255, 255, 0.767);
+
+}
+
+.maq-details summary{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    justify-content: space-between;
+}
+.maq-details summary img{
+    width: 30px;
+    height: auto;
+}
+.maquinas-sensores{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+}
+.column-text{
+    width: 100%;
+    text-align: center;
+}
+.info-temp-table{
+    font-size: 10px;
+    border-collapse: separate;
+    border-spacing: 2px;
+    height: 100%;
+    width: 100%;
+}
+.info-temp-table tr td,th{
+    border: 1px solid #1D1E2C;
+    text-align: center;
+    padding: 2px;
+}
+.info-temp-table tr th:nth-child(1){
+    border: none;
+}
+.maq-inp-temp {
+    align-items: center;
+    justify-content: center;
+    margin-right: 2.5%;
+    width: 65%;
+    display: flex;
+    font-size: 13px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.539);
+}
+.maq-inp-temp input{
+    width: 35%;
+}
+.maq-inp-temp .div-pen{
+    height: 100%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15%;
+    border: solid 1px #4f4f5280;
+    border-radius: 0 5px 5px 0;
+}
+.div-pen img{
+    width: 15px;
+}
+.temps-interval{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 12px;
+}
+.user-maq{
+    margin-top: 2%;
+    width: 98%;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    padding: 1%;
+    border-radius: 5px;
+}
+.title-func{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: 4%;
+    gap: 10%;
+}
+.func-info{
+    width: 98%;
+    display: flex;
+    align-items: center;
+    gap: 1%;
+    border: #1D1E2C 1px solid;
+    padding: 1%;
+}
+.func-info img{
+    width: 2%;
+    height: auto;
+}
+.update-interval{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.767);
+    padding: 13px;
+    width: 25%;
+    font-size: 10px;
+}
+.update-interval:nth-child(1){
+    border-radius: 5px 0 0 5px;
+}
+.update-interval input{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #1D1E2C;
+    background-color: #1d1e2c00;
+    color: #000;
+    outline: none;
+}
+.div-btns{
+    height: 100%;
+    cursor: pointer;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 15%;
+    background-color: #4f4f5280;
+    border-radius: 0 5px 5px 0;
+    
+}
+.maq-inp-temp button{
+    cursor: pointer;
+    border: none;
+    background-color: #1d1e2c00;
+
+}
+.menu-lateral ul li {
+    padding: 2px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-top: 10%;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    width: 99%;
+}
